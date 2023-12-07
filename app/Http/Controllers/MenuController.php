@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Menu;
+use App\Models\Promo;
 use Exception;
 use Illuminate\Http\File;
 use Illuminate\Http\Request;
@@ -62,9 +63,14 @@ class MenuController extends Controller
     {
         $data = Menu::where('slug', $slug)->first();
         if ($data != null) {
+            // Check if there are related records in the Promo model
+            if (Promo::where('menu_id', $data->id)->exists()) {
+                toast(" $data->nama memiliki relasi dengan Promo, tidak dapat dihapus", 'error');
+                return redirect()->back();
+            }
             if (file_exists(public_path('/storage/menu/' . $data->gambar))) {
-                unlink(public_path('/storage/menu/' . $data->gambar));
                 $data->delete();
+                unlink(public_path('/storage/menu/' . $data->gambar));
                 toast('Data berhasil dihapus', 'success');
                 return redirect()->back();
             }

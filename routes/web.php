@@ -38,7 +38,8 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/admin/list-review', [PageController::class, 'reviewAdmin'])->name('admin.review');
     Route::get('/admin/testimoni/create', [PageController::class, 'testimoniAdmin'])->name('admin.testimoni.create');
     Route::get('/admin/list-testimoni/', [PageController::class, 'showListTestimoni'])->name('admin.testimoni.show');
-    Route::get('/admin/promo', [PageController::class, 'createPromo'])->name('admin.promo');
+    Route::get('/admin/promo', [PageController::class, 'showListPromo'])->name('admin.promo');
+    Route::get('/admin/promo/create', [PageController::class, 'createPromo'])->name('admin.promo.create');
     Route::get('/admin/promo/show/{slug}', [PageController::class, 'showPromo'])->name('admin.promo.show');
 
     // Post

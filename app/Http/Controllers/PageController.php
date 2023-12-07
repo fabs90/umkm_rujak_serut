@@ -26,7 +26,10 @@ class PageController extends Controller
     public function admin()
     {
         $menu = Menu::all();
-        return view("admin.admin", compact('menu'));
+        $promos = Promo::all();
+        $testimonis = Testimoni::all();
+        $reviews = Review::all();
+        return view("admin.admin", compact('menu', 'promos', 'testimonis', 'reviews'));
     }
 
     public function addMenu()
@@ -61,6 +64,12 @@ class PageController extends Controller
         $testimoni = Testimoni::all();
 
         return view('admin.testimoni.list', compact('testimoni'));
+    }
+
+    public function showListPromo()
+    {
+        $datas = Promo::all();
+        return view('admin.promo.listPromo', compact('datas'));
     }
 
     public function createPromo()

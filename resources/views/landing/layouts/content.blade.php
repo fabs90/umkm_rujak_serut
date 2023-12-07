@@ -86,7 +86,7 @@
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="text-align:justify;">
                 <h1 class="display-5 mb-4">Tentang Kami</h1>
-                <p class="mb-4">Nama saya Dewa Ayu Putu Setuti Asih, orang-orang memanggil saya Ibu Ayu.
+                <p class="mb-4">Nama saya Ayu Putu Setuti Asih, orang-orang memanggil saya Ibu Ayu.
                     Memulai usaha kuliner rujak klasik dan bubur ubi ungu dari tahun 2018.
                     Rujak klasik menjadi pilihan, karena saya hobi makan rujak dan punya kenangan indah dengan ibu.
                     Selain itu saya ingin memberikan alternatif camilan sehat yang fresh dengan citarasa Indonesia yang
@@ -273,7 +273,8 @@
                                 </div>
                                 <div class="text-center p-4">
                                     <a class="d-block h5 mb-2" href="">{{ $menu->nama }}</a>
-                                    <span class="text-primary me-1">Rp{{ $menu->harga }}</span>
+                                    <span
+                                        class="text-primary me-1">Rp.{{ number_format($menu->harga, 0, ',', '.') }}</span>
                                     <span class="text-body text-decoration-line-through">Rp29.000</span>
                                 </div>
                                 <div class="d-flex border-top">

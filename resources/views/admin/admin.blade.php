@@ -33,8 +33,7 @@
                             <div class="info-box-content">
                                 <span class="info-box-text">Jumlah Menu</span>
                                 <span class="info-box-number">
-                                    10
-                                    <small>%</small>
+                                    {{ count($menu) }}
                                 </span>
                             </div>
                             <!-- /.info-box-content -->
@@ -48,7 +47,7 @@
 
                             <div class="info-box-content">
                                 <span class="info-box-text">Jumlah Review</span>
-                                <span class="info-box-number">41,410</span>
+                                <span class="info-box-number">{{ count($reviews) }}</span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -65,7 +64,7 @@
 
                             <div class="info-box-content">
                                 <span class="info-box-text">Jumlah Testimoni</span>
-                                <span class="info-box-number">760</span>
+                                <span class="info-box-number">{{ count($testimonis) }}</span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -77,8 +76,8 @@
                             <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
 
                             <div class="info-box-content">
-                                <span class="info-box-text">New Members</span>
-                                <span class="info-box-number">2,000</span>
+                                <span class="info-box-text">Jumlah Promo</span>
+                                <span class="info-box-number">{{ count($promos) }}</span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>

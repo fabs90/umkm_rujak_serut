@@ -11,25 +11,25 @@
 
             <!--------------------------- Left Box ----------------------------->
 
-            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box"
+            <div class="col-md-5 rounded-4 d-flex justify-content-center align-items-center flex-column left-box"
                 style="background: #103cbe;">
                 <div class="featured-image mb-3">
                     <img src="{{ asset('halaman login/img/akun.jpg') }}" class="img-fluid" style="width: 250px;">
                 </div>
                 <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Be
                     Verified</p>
-                <small class="text-white text-wrap text-center"
-                    style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Lorem ipsum dolor sit amet.</small>
+                {{-- <small class="text-white text-wrap text-center"
+                    style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Lorem ipsum dolor sit amet.</small> --}}
             </div>
 
             <!-------------------- ------ Right Box ---------------------------->
 
-            <div class="col-md-6 right-box ">
+            <div class="col-md-7 right-box">
                 <div class="row align-items-center">
                     <div class="header-text mb-4">
                         <h2>Login</h2>
-                        <p>We are happy to have you back.</p>
-                        <a href="/">Back to home</a>
+                        <p>Silakan login untuk masuk ke halaman admin.</p>
+                        <a href="/">Kembali ke Home</a>
                     </div>
                     <form action="{{ route('login.process') }}" method="post">
                         @csrf

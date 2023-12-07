@@ -1,7 +1,9 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="" class="brand-link text-center">
+    <a href="" class="brand-link text-center"
+        style="text-decoration: none; pointer-events: none;
+    cursor: default;">
         <span class="brand-text font-weight-normal">Admin</span>
     </a>
 
@@ -79,6 +81,14 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ route('admin.promo') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>
+                                    List Promo
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('admin.testimoni.create') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>
@@ -87,13 +97,14 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('admin.promo') }}" class="nav-link">
+                            <a href="{{ route('admin.promo.create') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>
                                     Tambah Promo
                                 </p>
                             </a>
                         </li>
+
                     </ul>
                 </li>
 
