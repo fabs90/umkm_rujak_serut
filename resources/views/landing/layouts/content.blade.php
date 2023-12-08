@@ -553,7 +553,7 @@
                 <p>Penilaian terhadap costumer yang sudah membeli produk kami.</p>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s"
-                style="text-align: justify;">
+                style="text-align: left;">
                 @foreach ($reviews as $review)
                     <div class="testimonial-item position-relative bg-white p-5 mt-4">
                         <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
