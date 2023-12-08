@@ -57,6 +57,28 @@
                                         {{-- End Col --}}
                                         {{-- Col --}}
                                         <div class="col-lg-10 mb-3 mx-auto">
+                                            <label for="kategori" class="form-label"
+                                                style="font-weight: normal; color:rgb(68, 68, 68)">Kategori</label>
+                                            <div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="kategori"
+                                                        id="exampleRadios1" value="1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        Rujak
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="kategori"
+                                                        id="exampleRadios1" value="2">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        Ubi
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- End Col --}}
+                                        {{-- Col --}}
+                                        <div class="col-lg-10 mb-3 mx-auto">
                                             <label for="hargaMenu" class="form-label"
                                                 style="font-weight: normal; color:rgb(68, 68, 68)">Harga Menu</label>
                                             <input type="number"

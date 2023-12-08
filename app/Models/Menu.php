@@ -26,4 +26,10 @@ class Menu extends Model
     {
         return $this->hasMany(Promo::class);
     }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
 }

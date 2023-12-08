@@ -11,4 +11,8 @@ class Category extends Model
 
     protected $table = "categories";
 
+    public function menu()
+    {
+        return $this->hasMany(Menu::class);
+    }
 }

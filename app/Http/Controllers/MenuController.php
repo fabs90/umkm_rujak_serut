@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\MenuRequest;
 use App\Models\Menu;
 use App\Models\Promo;
 use Exception;
@@ -11,25 +12,9 @@ use Illuminate\Support\Str;
 
 class MenuController extends Controller
 {
-    public function store(Request $request)
+    public function store(MenuRequest $request)
     {
-        $validate = $request->validate([
-            'nama' => ['required', 'min:3', 'max:100', 'unique:menu,nama'],
-            'harga' => ['required', 'numeric', 'min:400'],
-            'deskripsi' => ['required'],
-            'image' => ['required', 'mimes:png,jpg,jpeg,svg', 'file', 'max:8192'],
-        ], [
-            'nama.required' => 'Nama menu wajib diisi!',
-            'nama.min' => 'Panjang minimal nama menu 3 karakter!',
-            'nama.max' => 'Panjang maksimal nama menu 100 karakter!',
-            'nama.unique' => 'Nama menu sudah terpakai, coba yang lain!',
-            'harga.required' => 'Harga harus diisi!',
-            'harga.min' => 'Harga minimal adalah 400 perak',
-            'deskripsi.required' => 'Deskripsi menu wajib diisi!',
-            'image.required' => 'Upload gambar wajib diisi!',
-            'image.mimes' => 'Hanya dapat mengupload file bertipe: png, jpg, jpeg, svg',
-            'image.max' => 'Ukuran maksimum gambar adalah 8mb!',
-        ]);
+        $validate = $request->validated();
 
         if ($request->hasFile('image') && $request->file('image')->isValid()) {
             // Generate filename
@@ -40,6 +25,7 @@ class MenuController extends Controller
                 $request->image->storeAs('menu', $fileName, 'public');
 
                 Menu::create([
+                    'category_id' => $request->kategori,
                     'nama' => $request->nama,
                     'harga' => $request->harga,
                     'deskripsi' => $request->deskripsi,
@@ -50,7 +36,7 @@ class MenuController extends Controller
                 toast('Data berhasil ditambah!', 'success');
                 return redirect()->back();
             } catch (Exception $e) {
-                toast('Data gagal ditambah! Error message : ' . $e, 'error');
+                toast('Data gagal ditambah!', 'error');
                 return redirect()->back();
             }
         } else {
