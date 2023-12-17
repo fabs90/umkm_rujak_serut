@@ -57,7 +57,7 @@
                 @foreach ($promos as $promo)
                     <div class="col-md-6">
                         <div class="about-img position-relative overflow-hidden p-5 pe-0 align-items-center">
-                            <img class="img-fluid w-60" src="{{ asset('landingpage-rujak') }}/img/promo.jpg">
+                            <img class="img-fluid w-60" src="{{ asset('storage/promo/' . $promo->gambar) }}">
                         </div>
                     </div>
                     <div class="col-md-6">
