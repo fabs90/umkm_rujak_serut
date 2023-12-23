@@ -3,13 +3,12 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6" style="text-align: justify;">
-                    <h1 class="fw-bold text-primary mb-4">R<span class="text-secondary">uj</span>ak</h1>
+                    <h1 class="fw-bold text-danger m-0"> <span style="color: red;">Rujak Klasik</span> <span
+                            class="text-primary">&</span> <span style="color: purple;">Bubur Ubi</span></h1>
                     <p>Rujak serut, minuman sehat yang cocok dikonsumsi kapan aja dan dimana aja. Makin enak lagi
                         dikonsumsi pas lagi dingin-dinginnya. Boleh banget loh request ekstra es batu, gratis tanpa
                         biaya tambahan</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i
-                                class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-1"
                             href="https://youtube.com/@kbmayuarraffah8886"><i class="fab fa-facebook-f"></i></a>
                         <a target="_blank" class="btn btn-square btn-outline-light rounded-circle me-1"
@@ -93,7 +92,7 @@
                                 </div>
 
                             </div>
-                            <button type="submit" class="btn btn-primary rounded-pill py-2 px-3 mt-3">Submit</button>
+                            <button type="submit" class="btn btn-primary rounded-pill py-2 px-3 mt-1">Submit</button>
                         </form>
                     </div>
                 </div>

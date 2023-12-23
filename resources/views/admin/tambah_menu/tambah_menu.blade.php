@@ -69,8 +69,8 @@
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="radio" name="kategori"
-                                                        id="exampleRadios1" value="2">
-                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        id="exampleRadios2" value="2">
+                                                    <label class="form-check-label" for="exampleRadios2">
                                                         Ubi
                                                     </label>
                                                 </div>

@@ -57,7 +57,8 @@
                 @foreach ($promos as $promo)
                     <div class="col-md-6">
                         <div class="about-img position-relative overflow-hidden p-5 pe-0 align-items-center">
-                            <img class="img-fluid w-60" src="{{ asset('storage/promo/' . $promo->gambar) }}">
+                            <img class="img-fluid w-60" width="250" height="250"
+                                src="{{ asset('storage/promo/' . $promo->gambar) }}">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -68,10 +69,6 @@
                 @endforeach
             </div>
         </div>
-
-
-
-
     </div>
 </div>
 
@@ -81,34 +78,27 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                    <img class="img-fluid w-100" src="{{ asset('landingpage-rujak') }}/img/fotobersama.jpeg">
+                    <img class="img-fluid w-60" src="{{ asset('rujak dan ubi/img/fotobuAyu.jpeg') }}" width="300"
+                        height="200">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="text-align:justify;">
                 <h1 class="display-5 mb-4">Tentang Kami</h1>
-                <p class="mb-4">Nama saya Ayu Putu Setuti Asih, orang-orang memanggil saya Ibu Ayu.
-                    Memulai usaha kuliner rujak klasik dan bubur ubi ungu dari tahun 2018.
-                    Rujak klasik menjadi pilihan, karena saya hobi makan rujak dan punya kenangan indah dengan ibu.
-                    Selain itu saya ingin memberikan alternatif camilan sehat yang fresh dengan citarasa Indonesia yang
-                    cocok di lidah orang kebanyakan.
-                    Merk Rujak Klasik merupakan produk unggulan di bawah nama usaha Griya Kuliner Jaen 954 , yang
-                    berdiri pada 9 Mei 2018.
-                    Jaen sendiri singkatan dari Jajanan Enak dan dalam Bahasa Bali Jaen juga berarti enak.
-                    Rujak Klasik merupakan rujak buah dari buah pilihan, diantaranya : buah mangga, kedondong,
-                    bengkoang, nanas, timun dan ubi merah dengan sambal yang terbuat dari cabai dan bahan pilihan, level
-                    kepedasan yang bervariasi dan nikmat disantap dalam suhu ruang dan dingin yang lebih memberikan rasa
-                    segarnya.
-                    Sambel rujak pun menjadi produksi saya yang disiapkan untuk konsumen yang ingin membuat rujak dengan
-                    buah-buah pilihan sesuai selera konsumen tanpa harus repot membuat sambalnya.
-                    Selain rujak klasik dan sambal rujak, produk unggulan saya lainnya adalah Bubur Ubi Ungu.
-                    Bubur Ubi Ungu atau sering saya singkat dengan Burbiu merupakan olahan kuliner apa yang bisa
-                    dinikmati oleh segala usia, bermanfaat dan menyehatkan.
-                    Ubi ungu yang kaya akan manfaat, diantaranya anti oksidan dan anti kanker.
+                <p class="mb-4"> Merk Rujak Klasik merupakan produk unggulan di bawah nama Ayu Putu Setuti Asih, yang
+                    berdiri pada 9 Mei 2018. <br>
+                    &nbsp; &nbsp; &nbsp; <strong> Rujak Klasik </strong>merupakan rujak buah dari buah pilihan,
+                    diantaranya : buah mangga, kedondong, bengkoang, nanas, timun dan ubi merah dengan sambal yang
+                    terbuat dari cabai dan bahan pilihan, level kepedasan yang bervariasi dan nikmat disantap dalam suhu
+                    ruang dan dingin yang lebih memberikan rasa segarnya.
+                    Selain rujak klasik dan sambal rujak, produk unggulan saya lainnya adalah Bubur Ubi Ungu. <br>
+                    &nbsp; &nbsp; &nbsp; <strong> Bubur Ubi Ungu </strong> atau sering saya singkat dengan Burbiu
+                    merupakan olahan kuliner apa yang bisa dinikmati oleh segala usia, bermanfaat dan menyehatkan.
                     Untuk mengolah ubi ungu menjadi Burbiu ini sangat mudah membuatnya, perpaduan rasa manis dan
                     gurihnya santan yang diolah dari fiber cream dan rich cream menjadikan sensasi rasa tersendiri jika
-                    disantap pada suhu ruang , hangat ataupun dingin.
-                    Rujak Klasik, sambal rujak dan bubur ubi ungu tersedia dalam berbagai variasi ukuran berat dan cocok
-                    untuk berbagai acara seperti arisan, acara pernikahan, reuni, rapat dan berbagai acara lainnya.
+                    disantap pada suhu ruang , hangat ataupun dingin. <br>
+                    &nbsp; &nbsp; &nbsp;Rujak Klasik, sambal rujak dan bubur ubi ungu tersedia dalam berbagai variasi
+                    ukuran berat dan cocok untuk berbagai acara seperti arisan, acara pernikahan, reuni, rapat dan
+                    berbagai acara lainnya.
                     Kemudahan proses pengiriman dan bertransaksi menjadi fokus utama saya agar konsumen bisa menikmati
                     Rujak Klasik, sambal rujak dan Bubur Ubi Ungu tanpa terkendala oleh jarak dan waktu.
 
@@ -123,7 +113,7 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                    <img class="img-fluid w-100" src="{{ asset('landingpage-rujak') }}/img/fotologoestetik.JPG">
+                    <img class="img-fluid w-100" src="{{ asset('rujak dan ubi') }}/img/fotologoestetik.JPG">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="text-align:justify;">
@@ -152,14 +142,12 @@
         </div>
     </div>
 </div>
-<!-- About End -->
-
 <div class="container-xxl py-5" id="about">
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                    <img class="img-fluid w-100" src="{{ asset('landingpage-rujak') }}/img/fotoubi3.JPG">
+                    <img class="img-fluid w-100" src="{{ asset('rujak dan ubi') }}/img/fotoubi3.JPG">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="text-align:justify;">
@@ -174,8 +162,9 @@
                     di kulkas.
                     Proses pembuatannya yang mudah, bisa dinikmati oleh segala usia serta kaya manfaat antara lain ubi
                     ungu sebagai anti oksidan dan anti kanker menjadi alasan bubur ubi ungu ini diproduksi dan disantap
-                    dingin lebih menambah cita rasa perpaduan manis dan gurihnya.
-                    Burbiu dalam kemasan 150 gram hanya dengan harga 6K dan harga 10K bisa menikmati 300 gram burbiu.
+                    dingin lebih menambah cita rasa perpaduan manis dan gurihnya.<br>
+                    <strong> Burbiu dalam kemasan 150 gram hanya dengan harga 6K dan harga 10K bisa menikmati 300 gram
+                        burbiu.</strong>
 
 
                 <p><i class="fa fa-check text-primary me-3"></i>Berkualitas</p>
@@ -186,52 +175,7 @@
         </div>
     </div>
 </div>
-
-
-<!-- Feature Start -->
-<div class="container-fluid bg-light bg-icon my-5 py-6">
-    <div class="container">
-        <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
-            style="max-width: 500px;">
-            <h1 class="display-5 mb-3">Projek Kita</h1>
-            <p>Rujak buah jadi salah satu alternatif buat kamu yang pengen dapet nutrisi dari berbagai macam buah. Beli
-                sekarang juga hanya di warung kita</p>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="bg-white text-center h-100 p-4 p-xl-5">
-                    <img class="img-fluid mb-4" src="{{ asset('landingpage-rujak') }}/img/project1.jpeg"
-                        alt="">
-                    <h4 class="mb-3">Kebersamaan Kami</h4>
-                    <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero
-                        dolor duo.</p>
-                    <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="bg-white text-center h-100 p-4 p-xl-5">
-                    <img class="img-fluid mb-4" src="{{ asset('landingpage-rujak') }}/img/project2.jpeg"
-                        alt="">
-                    <h4 class="mb-3">Mengecek Produk</h4>
-                    <p class="mb-4">Kami sedang mengecek produk kami apakah sudah baik dan segar atau belum</p>
-                    <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="bg-white text-center h-100 p-4 p-xl-5">
-                    <img class="img-fluid mb-4" src="{{ asset('landingpage-rujak') }}/img/project3.jpeg"
-                        alt="">
-                    <h4 class="mb-3">Mencicipi Produk</h4>
-                    <p class="mb-4">Kami sedang mencicipi produk kami apakah dari segi rasa dan buahnya sudah segar
-                        atau belum</p>
-                    <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Feature End -->
-
+<!-- About End -->
 
 <!-- Product Start -->
 <div class="container-xxl py-5">
@@ -260,22 +204,21 @@
         <div class="tab-content">
             <div id="tab-1" class="tab-pane fade show p-0 active">
                 <div class="row g-4">
-                    @foreach ($menus as $menu)
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    @foreach ($menuRujak as $item)
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
                                     <img class="img-fluid w-100 ratio ratio-1x1"
-                                        src="{{ asset('storage/menu/' . $menu->gambar) }}" alt="">
+                                        src="{{ asset('storage/menu/' . $item->gambar) }}" alt="">
 
                                     <div
                                         class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
                                         New</div>
                                 </div>
                                 <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">{{ $menu->nama }}</a>
-                                    <span
-                                        class="text-primary me-1">Rp.{{ number_format($menu->harga, 0, ',', '.') }}</span>
-                                    <span class="text-body text-decoration-line-through">Rp29.000</span>
+                                    <a class="d-block h5 mb-2" href="">{{ $item->nama }}</a>
+                                    <span class="text-primary me-1">Rp {{ number_format($item->harga, 2) }}</span>
+                                    <span class="text-body text-decoration-line-through">Rp 35.000</span>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="w-50 text-center border-end py-2">
@@ -283,219 +226,53 @@
                                                 class="fa fa-eye text-primary me-2"></i>View detail</a>
                                     </small>
                                     <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i
-                                                class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                        <a class="text-body" target="_blank"
+                                            href="https://wa.me/6285210303732?text=saya%20ingin%20memesan%20ukuran%20250g%20rujak%20klasik"><i
+                                                class="fab fa-whatsapp fa-2x text-primary me-2"></i>Pesan Disini</a>
                                     </small>
                                 </div>
                             </div>
                         </div>
                     @endforeach
 
-
-                    <div class="col-12 text-center wow fadeInUp mb-5" data-wow-delay="0.1s">
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
                     </div>
                 </div>
             </div>
             <div id="tab-2" class="tab-pane fade show p-0">
                 <div class="row g-4">
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="product-item">
-                            <div class="position-relative bg-light overflow-hidden">
-                                <img class="img-fluid w-100" src="{{ asset('landingpage-rujak') }}/img/fotoubi1.JPG"
-                                    alt="">
-                                <div
-                                    class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
-                                    New</div>
-                            </div>
-                            <div class="text-center p-4">
-                                <a class="d-block h5 mb-2" href="">Ubi Ungu (150g)</a>
-                                <span class="text-primary me-1">Rp 6.000</span>
-                                <span class="text-body text-decoration-line-through">Rp 10.000</span>
-                            </div>
-                            <div class="d-flex border-top">
-                                <small class="w-50 text-center border-end py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                </small>
-                                <small class="w-50 text-center py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="product-item">
-                            <div class="position-relative bg-light overflow-hidden">
-                                <img class="img-fluid w-100"
-                                    src="{{ asset('landingpage-rujak') }}/img/produk ubi ungu1.jpeg" alt="">
-                                <div
-                                    class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
-                                    New</div>
-                            </div>
-                            <div class="text-center p-4">
-                                <a class="d-block h5 mb-2" href="">Ubi Ungu</a>
-                                <span class="text-primary me-1">Rp 6.000</span>
-                                <span class="text-body text-decoration-line-through">Rp 10.000</span>
-                            </div>
-                            <div class="d-flex border-top">
-                                <small class="w-50 text-center border-end py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                </small>
-                                <small class="w-50 text-center py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                </small>
+                    @foreach ($menuUbi as $item)
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="{{ asset('storage/menu/' . $item->gambar) }}"
+                                        alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">{{ $item->nama }}</a>
+                                    <span class="text-primary me-1">Rp {{ number_format($item->harga, 2) }}</span>
+                                    <span class="text-body text-decoration-line-through">Rp 10.000</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i
+                                                class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" target="_blank"
+                                            href="https://wa.me/6285210303732?text=saya%20ingin%20memesan%20150g%20produk%20bubur%20ubi"><i
+                                                class="fab fa-whatsapp fa-2x text-primary me-2"></i>Pesan Disini</a>
+                                    </small>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="product-item">
-                            <div class="position-relative bg-light overflow-hidden">
-                                <img class="img-fluid w-100" src="{{ asset('landingpage-rujak') }}/img/fotoubi2.JPG"
-                                    alt="">
-                                <div
-                                    class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
-                                    New</div>
-                            </div>
-                            <div class="text-center p-4">
-                                <a class="d-block h5 mb-2" href="">Ubi Ungu</a>
-                                <span class="text-primary me-1">Rp 7.000</span>
-                                <span class="text-body text-decoration-line-through">Rp 11.000</span>
-                            </div>
-                            <div class="d-flex border-top">
-                                <small class="w-50 text-center border-end py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                </small>
-                                <small class="w-50 text-center py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div id="tab-3" class="tab-pane fade show p-0">
-                <div class="row g-4">
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="product-item">
-                            <div class="position-relative bg-light overflow-hidden">
-                                <img class="img-fluid w-100" src="{{ asset('landingpage-rujak') }}/img/jambu.jpg"
-                                    alt="">
-                                <div
-                                    class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
-                                    New</div>
-                            </div>
-                            <div class="text-center p-4">
-                                <a class="d-block h5 mb-2" href="">Jambu </a>
-                                <span class="text-primary me-1">$19.00</span>
-                                <span class="text-body text-decoration-line-through">$29.00</span>
-                            </div>
-                            <div class="d-flex border-top">
-                                <small class="w-50 text-center border-end py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                </small>
-                                <small class="w-50 text-center py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="product-item">
-                            <div class="position-relative bg-light overflow-hidden">
-                                <img class="img-fluid w-100" src="{{ asset('landingpage-rujak') }}/img/nanas.jpg"
-                                    alt="">
-                                <div
-                                    class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
-                                    New</div>
-                            </div>
-                            <div class="text-center p-4">
-                                <a class="d-block h5 mb-2" href="">Nanas</a>
-                                <span class="text-primary me-1">$19.00</span>
-                                <span class="text-body text-decoration-line-through">$29.00</span>
-                            </div>
-                            <div class="d-flex border-top">
-                                <small class="w-50 text-center border-end py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                </small>
-                                <small class="w-50 text-center py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="product-item">
-                            <div class="position-relative bg-light overflow-hidden">
-                                <img class="img-fluid w-100" src="{{ asset('landingpage-rujak') }}/img/ubi1.jpg"
-                                    alt="">
-                                <div
-                                    class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
-                                    New</div>
-                            </div>
-                            <div class="text-center p-4">
-                                <a class="d-block h5 mb-2" href="">Ubi</a>
-                                <span class="text-primary me-1">$19.00</span>
-                                <span class="text-body text-decoration-line-through">$29.00</span>
-                            </div>
-                            <div class="d-flex border-top">
-                                <small class="w-50 text-center border-end py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                </small>
-                                <small class="w-50 text-center py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="product-item">
-                            <div class="position-relative bg-light overflow-hidden">
-                                <img class="img-fluid w-100" src="{{ asset('landingpage-rujak') }}/img/mangga.png"
-                                    alt="">
-                                <div
-                                    class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
-                                    New</div>
-                            </div>
-                            <div class="text-center p-4">
-                                <a class="d-block h5 mb-2" href="">Mangga</a>
-                                <span class="text-primary me-1">$19.00</span>
-                                <span class="text-body text-decoration-line-through">$29.00</span>
-                            </div>
-                            <div class="d-flex border-top">
-                                <small class="w-50 text-center border-end py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                </small>
-                                <small class="w-50 text-center py-2">
-                                    <a class="text-body" href=""><i
-                                            class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
 
                 </div>
             </div>
         </div>
     </div>
     <!-- Product End -->
-
 
     <!-- Firm Visit Start -->
 
@@ -605,53 +382,67 @@
     </div>
     <!-- Testimonial End -->
 
-
-    <!-- Blog Start -->
-    <div class="container-xxl py-5" id="blog">
-        <div class="container" id="blog">
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light bg-icon my-5 py-6">
+        <div class="container">
             <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
                 style="max-width: 500px;">
-                <h1 class="display-5 mb-3">Blog Kami</h1>
-                <p>Selamat Datang di Dunia Kelezatan: "Rujak Serut Sensasi Segar!"
-
-                    Mari bersama-sama merayakan kelezatan buah-buahan segar yang dipadu dengan saus unik dalam setiap
-                    gigitan. Di blog kami, kita akan menjelajahi keindahan dan kenikmatan dari Rujak Serut, hidangan
-                    segar yang tak tertandingi.</p>
+                <h1 class="display-5 mb-3">Projek Kami</h1>
+                <p>Rujak buah jadi salah satu alternatif buat kamu yang ingin mendapat nutrisi dari berbagai macam buah.
+                    Beli
+                    sekarang juga!</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid" src="{{ asset('landingpage-rujak') }}/img/orgmenanampohon.jpg"
-                        alt="">
-                    <div class="bg-light p-4">
-                        <a class="d-block h5 lh-base mb-4" href="">Bagaimana cara menanam pohon yang baik</a>
-                        <div class="text-muted border-top pt-4">
-                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Admin</small>
-                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>01 Jan, 2023</small>
-                        </div>
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{{ asset('landingpage-rujak') }}/img/project1.jpeg"
+                            alt="">
+                        <h4 class="mb-3">Kebersamaan Kami</h4>
+                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed
+                            vero
+                            dolor duo.</p>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read
+                            More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <img class="img-fluid" src="{{ asset('landingpage-rujak') }}/img/orgmemetikbuah.jpg"
-                        alt="">
-                    <div class="bg-light p-4">
-                        <a class="d-block h5 lh-base mb-4" href="">Bagaimana cara memetik buah dengan baik</a>
-                        <div class="text-muted border-top pt-4">
-                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Admin</small>
-                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>01 Jan, 2023</small>
-                        </div>
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{{ asset('landingpage-rujak') }}/img/project2.jpeg"
+                            alt="">
+                        <h4 class="mb-3">Mengecek Produk</h4>
+                        <p class="mb-4">Kami sedang mengecek produk kami apakah sudah baik dan segar atau belum</p>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read
+                            More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <img class="img-fluid" src="img/orgmemetikbuah2.jpg" alt="">
-                    <div class="bg-light p-4">
-                        <a class="d-block h5 lh-base mb-4" href="">Bagaimana menyeleksi buah yang segar</a>
-                        <div class="text-muted border-top pt-4">
-                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Admin</small>
-                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>01 Jan, 2023</small>
-                        </div>
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{{ asset('landingpage-rujak') }}/img/project3.jpeg"
+                            alt="">
+                        <h4 class="mb-3">Mencicipi Produk</h4>
+                        <p class="mb-4">Kami sedang mencicipi produk kami apakah dari segi rasa dan buahnya sudah
+                            segar
+                            atau belum</p>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read
+                            More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Blog End -->
+    <!-- Feature End -->
+
+    <!-- Address Start -->
+    <div class="container-xxl px-0 wow fadeIn" data-wow-delay="0.1s" style="margin-bottom: -6px;">
+        <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
+            style="max-width: 500px;">
+            <h1 class="display-5 mb-3">Alamat Kami</h1>
+            <p>Berisikan alamat rumah kami</p>
+        </div>
+        <iframe class="w-100" style="height: 450px;"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3965.140257839093!2d106.87631487499168!3d-6.375888393614385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjInMzMuMiJTIDEwNsKwNTInNDQuMCJF!5e0!3m2!1sid!2sid!4v1700008741181!5m2!1sid!2sid"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </div>
+    <!-- Address End -->

@@ -8,5 +8,5 @@
 {{-- fontawesome --}}
 <script src="https://kit.fontawesome.com/7fbfb5d8d4.js" crossorigin="anonymous"></script>
 <!-- Template Javascript -->
-<script src="{{ asset('landingpage-rujak') }}/js/main.js"></script>
+<script src="{{ asset('rujak dan ubi/js/main.js') }}"></script>
 </body>

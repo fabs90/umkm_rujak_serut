@@ -33,7 +33,7 @@
                             <div class="info-box-content">
                                 <span class="info-box-text">Jumlah Menu</span>
                                 <span class="info-box-number">
-                                    {{ count($menu) }}
+                                    {{ $menu }}
                                 </span>
                             </div>
                             <!-- /.info-box-content -->
@@ -123,7 +123,7 @@
 
                                                     <?php $i = 1; ?>
 
-                                                    @foreach ($menu as $data)
+                                                    @foreach ($menuRujak as $data)
                                                         <tr>
                                                             <td>{{ $i }}</td>
                                                             <td>{{ $data->nama }}</td>

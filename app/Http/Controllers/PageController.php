@@ -12,10 +12,11 @@ class PageController extends Controller
     public function landingPage()
     {
         $promos = Promo::all();
-        $menus = Menu::all();
+        $menuRujak = Menu::where('category_id', 1)->get();
+        $menuUbi = Menu::where('category_id', 2)->get();
         $testimonis = Testimoni::all();
         $reviews = Review::all();
-        return view('landing.layouts.master', compact('promos', 'menus', 'testimonis', 'reviews'));
+        return view('landing.layouts.master', compact('promos', 'menuRujak', 'menuUbi', 'testimonis', 'reviews'));
     }
 
     public function contact()
@@ -25,11 +26,13 @@ class PageController extends Controller
 
     public function admin()
     {
-        $menu = Menu::all();
+        $menuRujak = Menu::where('category_id', 1)->get();
+        $menuUbi = Menu::where('category_id', 2)->get();
+        $menu = count($menuRujak) + count($menuUbi);
         $promos = Promo::all();
         $testimonis = Testimoni::all();
         $reviews = Review::all();
-        return view("admin.admin", compact('menu', 'promos', 'testimonis', 'reviews'));
+        return view("admin.admin", compact('menu', 'menuRujak', 'menuUbi', 'promos', 'testimonis', 'reviews'));
     }
 
     public function addMenu()
