@@ -63,6 +63,11 @@
                     </div>
                     <div class="col-md-6">
                         <h5 class="text-center">{{ $promo->Menu->nama }}</h5>
+                        <div class="text-center mt-2">
+                            <span class="text-primary me-1">Rp {{ number_format($promo->harga, 2) }}</span>
+                            <span class="text-body text-decoration-line-through">Rp
+                                {{ number_format($promo->Menu->harga, 2) }}</span>
+                        </div>
                         <p class="text-justify">{{ $promo->deskripsi }}
                         </p>
                     </div>
@@ -218,7 +223,8 @@
                                 <div class="text-center p-4">
                                     <a class="d-block h5 mb-2" href="">{{ $item->nama }}</a>
                                     <span class="text-primary me-1">Rp {{ number_format($item->harga, 2) }}</span>
-                                    <span class="text-body text-decoration-line-through">Rp 35.000</span>
+                                    <span class="text-body text-decoration-line-through">Rp
+                                        {{ number_format($item->harga + 10000, 2) }}</span>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="w-50 text-center border-end py-2">
@@ -251,7 +257,8 @@
                                 <div class="text-center p-4">
                                     <a class="d-block h5 mb-2" href="">{{ $item->nama }}</a>
                                     <span class="text-primary me-1">Rp {{ number_format($item->harga, 2) }}</span>
-                                    <span class="text-body text-decoration-line-through">Rp 10.000</span>
+                                    <span class="text-body text-decoration-line-through">
+                                        {{ number_format($item->harga + 10000, 2) }}</span>
                                 </div>
                                 <div class="d-flex border-top">
                                     <small class="w-50 text-center border-end py-2">

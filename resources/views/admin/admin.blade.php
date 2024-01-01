@@ -93,7 +93,7 @@
                             <div class="card-header">
                                 <h5 class="card-title">
                                     <i class="fas fa-pie-chart mr-1"></i>
-                                    List Menu
+                                    List Menu Rujak
                                 </h5>
                                 <div class="card-tools">
                                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -169,6 +169,87 @@
                 </div>
                 <!-- /.row -->
 
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">
+                                    <i class="fas fa-pie-chart mr-1"></i>
+                                    List Menu Ubi
+                                </h5>
+                                <div class="card-tools">
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="tab-content p-0">
+                                            <table id="all_menu"
+                                                class="table table-striped table-bordered text-center table-responsive-sm"
+                                                cellpadding="0" cellspacing="0" style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">No.</th>
+                                                        <th scope="col">Nama</th>
+                                                        <th scope="col">Harga</th>
+                                                        <th scope="col">Deskripsi</th>
+                                                        <th scope="col">Image</th>
+                                                        <th scope="col" class="col-2">Aksi</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <?php $i = 1; ?>
+
+                                                    @foreach ($menuUbi as $data)
+                                                        <tr>
+                                                            <td>{{ $i }}</td>
+                                                            <td>{{ $data->nama }}</td>
+                                                            <td>Rp.{{ number_format($data->harga, 2, ',', '.') }}
+                                                            </td>
+                                                            <td>
+                                                                {{ $data->deskripsi }}
+                                                            </td>
+                                                            <td>
+                                                                <img src="{{ asset('storage/menu/' . $data->gambar) }}"
+                                                                    class="image-view">
+                                                            </td>
+                                                            <td>
+                                                                <a class="btn btn-sm btn-success btn-update"
+                                                                    href="{{ route('menu.show', ['slug' => $data->slug]) }}"
+                                                                    role="button">Ubah</a>
+                                                                <form
+                                                                    action="{{ route('menu.destroy', ['slug' => $data->slug]) }}"
+                                                                    method="POST">
+                                                                    @csrf
+                                                                    @method('DELETE')
+                                                                    <button type="submit"
+                                                                        class="btn btn-sm btn-danger btn-hapus">Hapus</button>
+                                                                </form>
+                                                            </td>
+
+                                                        </tr>
+                                                        <?php $i++; ?>
+                                                    @endforeach
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- ./card-body -->
+
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
 
             </div><!--/. container-fluid -->
         </section>
