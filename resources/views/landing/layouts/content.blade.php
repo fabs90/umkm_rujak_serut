@@ -68,7 +68,10 @@
                             <span class="text-body text-decoration-line-through">Rp
                                 {{ number_format($promo->Menu->harga, 2) }}</span>
                         </div>
-                        <p class="text-justify">{{ $promo->deskripsi }}
+                        <p class="text-justify">
+                            <strong style="font-size: 20px; color: #ff0000;">
+                                {{ $promo->deskripsi }}
+                            </strong>
                         </p>
                     </div>
                 @endforeach
@@ -89,24 +92,23 @@
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="text-align:justify;">
                 <h1 class="display-5 mb-4">Tentang Kami</h1>
-                <p class="mb-4"> Merk Rujak Klasik merupakan produk unggulan di bawah nama Ayu Putu Setuti Asih, yang
-                    berdiri pada 9 Mei 2018. <br>
-                    &nbsp; &nbsp; &nbsp; <strong> Rujak Klasik </strong>merupakan rujak buah dari buah pilihan,
-                    diantaranya : buah mangga, kedondong, bengkoang, nanas, timun dan ubi merah dengan sambal yang
-                    terbuat dari cabai dan bahan pilihan, level kepedasan yang bervariasi dan nikmat disantap dalam suhu
-                    ruang dan dingin yang lebih memberikan rasa segarnya.
-                    Selain rujak klasik dan sambal rujak, produk unggulan saya lainnya adalah Bubur Ubi Ungu. <br>
-                    &nbsp; &nbsp; &nbsp; <strong> Bubur Ubi Ungu </strong> atau sering saya singkat dengan Burbiu
-                    merupakan olahan kuliner apa yang bisa dinikmati oleh segala usia, bermanfaat dan menyehatkan.
+                <p class="mb-4"> Merk Rujak Klasik merupakan produk unggulan Ibu Ayu Putu Setuti Asih, sudah dinikmati
+                    sejak 9 Mei 2018. <br>
+                    &nbsp; &nbsp; &nbsp; <strong> Rujak Klasik </strong>dibuat dari buah segar pilihan, diantaranya :
+                    buah mangga, kedondong, bengkoang, nanas, timun dan ubi merah dengan sambal yang terbuat dari cabai
+                    dan bahan pilihan, level kepedasan yang bervariasi dan nikmat disantap dalam suhu ruang dan dingin
+                    yang lebih memberikan rasa segarnya.
+                    Selain rujak klasik dan sambal rujak, produk unggulan lainnya adalah Bubur Ubi Ungu. <br>
+                    &nbsp; &nbsp; &nbsp; <strong> Bubur Ubi Ungu </strong> atau sering disingkat dengan Burbiu merupakan
+                    olahan kuliner yang bisa dinikmati oleh segala usia, bermanfaat dan menyehatkan.
                     Untuk mengolah ubi ungu menjadi Burbiu ini sangat mudah membuatnya, perpaduan rasa manis dan
                     gurihnya santan yang diolah dari fiber cream dan rich cream menjadikan sensasi rasa tersendiri jika
                     disantap pada suhu ruang , hangat ataupun dingin. <br>
-                    &nbsp; &nbsp; &nbsp;Rujak Klasik, sambal rujak dan bubur ubi ungu tersedia dalam berbagai variasi
-                    ukuran berat dan cocok untuk berbagai acara seperti arisan, acara pernikahan, reuni, rapat dan
-                    berbagai acara lainnya.
-                    Kemudahan proses pengiriman dan bertransaksi menjadi fokus utama saya agar konsumen bisa menikmati
-                    Rujak Klasik, sambal rujak dan Bubur Ubi Ungu tanpa terkendala oleh jarak dan waktu.
-
+                    &nbsp; &nbsp; &nbsp; <strong> Rujak klasik, sambal rujak dan bubur ubi ungu </strong> tersedia dalam
+                    berbagai variasi ukuran, berat dan cocok untuk berbagai acara seperti arisan, acara pernikahan,
+                    reuni, rapat dan berbagai acara lainnya.
+                    Proses pengiriman dan bertransaksi sangat mudah sehingga kesegaran Rujak klasik, sambal klasik dan
+                    bubur ubi ungu terjaga sampai di tangan konsumen.
                 </p>
 
             </div>
@@ -136,7 +138,7 @@
                     freezer.
                     Rujak Klasik dikemas dalam toples, box mika dan plastik pouch atau sesuai dengan permintaan
                     konsumen.
-                    Dan yang pasti rujak klasik ini sudah bersertikat Halal. <br><br>
+                    Dan yang pasti rujak klasik ini sudah bersertifikat Halal. <br><br>
                     <strong> untuk 250 g rujak klasik dibandrol dengan harga 15K dan 25K untuk 430 gr.<br><br></strong>
                     Untuk pemesanan sesuai permintaan konsumen bisa dengan harga khusus.
                     Apapun kemasannya dijamin rasa rujak klasik tetep SEGER deh. <br><br>
@@ -159,7 +161,7 @@
 
                 <p class="mb-4"><strong>#Bubur Ubi Ungu alias Burbiu#<br></strong>
 
-                    Bubur Ubi Ungu alias Burbiu , terbuat dari ubi jalar yang berwarna ungu, yang direbus kemudian
+                    Bubur Ubi Ungu alias Burbiu, terbuat dari ubi jalar yang berwarna ungu, yang direbus kemudian
                     dicampur tepung sagu, gula putih dan sedikit garam.
                     Dihidangkan dengan santan yang dibuat dari Fiber Cream atau Rich Cream yang kaya akan serat sehingga
                     aman untuk dikonsumsi.
@@ -301,7 +303,7 @@
                                         class="d-block w-50" alt="Review Foto 1">
                                 </div>
                                 @foreach ($testimonis as $testimoni)
-                                    <div class="carousel-item">
+                                    <div class="carousel-item active">
                                         <img src="{{ asset('storage/testimoni/' . $testimoni->gambar) }}"
                                             class="d-block w-50" alt="Review Foto 3">
                                     </div>
@@ -395,9 +397,8 @@
             <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
                 style="max-width: 500px;">
                 <h1 class="display-5 mb-3">Projek Kami</h1>
-                <p>Rujak buah jadi salah satu alternatif buat kamu yang ingin mendapat nutrisi dari berbagai macam buah.
-                    Beli
-                    sekarang juga!</p>
+                <p>Rujak buah menjadi salah satu alternatif buat kamu yang ingin dapet nutrisi dari berbagai macam buah.
+                    Beli sekarang disini</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -405,9 +406,7 @@
                         <img class="img-fluid mb-4" src="{{ asset('landingpage-rujak') }}/img/project1.jpeg"
                             alt="">
                         <h4 class="mb-3">Kebersamaan Kami</h4>
-                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed
-                            vero
-                            dolor duo.</p>
+                        <p class="mb-4">Kompak, kreatif, dan inovatif.</p>
                         <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read
                             More</a>
                     </div>
@@ -417,7 +416,7 @@
                         <img class="img-fluid mb-4" src="{{ asset('landingpage-rujak') }}/img/project2.jpeg"
                             alt="">
                         <h4 class="mb-3">Mengecek Produk</h4>
-                        <p class="mb-4">Kami sedang mengecek produk kami apakah sudah baik dan segar atau belum</p>
+                        <p class="mb-4">Menjaga kualitas produk.</p>
                         <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read
                             More</a>
                     </div>
@@ -427,9 +426,7 @@
                         <img class="img-fluid mb-4" src="{{ asset('landingpage-rujak') }}/img/project3.jpeg"
                             alt="">
                         <h4 class="mb-3">Mencicipi Produk</h4>
-                        <p class="mb-4">Kami sedang mencicipi produk kami apakah dari segi rasa dan buahnya sudah
-                            segar
-                            atau belum</p>
+                        <p class="mb-4">Memastikan kelezatan, rasa, dan kesegaran produk.</p>
                         <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read
                             More</a>
                     </div>
