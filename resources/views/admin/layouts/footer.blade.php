@@ -9,7 +9,7 @@
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
-        Supported by : Tax Center <b>Gunadarma</b>
+        Supported by : <b style="color: yellow">Tax Center </b><b style="color: purple">Gunadarma</b>
     </div>
 </footer>
 </div>
